@@ -29,3 +29,37 @@ export const getTotal = (array: number[]): number => {
   });
   return total;
 };
+
+export const SortObjects = <T extends any>(
+  initialArray: T[],
+  firstClassProperty: keyof T,
+  order: "ASC" | "DESC" = "ASC",
+  evaluatorFunction?: (a: T, b: T) => 0 | 1 | -1
+): T[] =>
+  initialArray.sort((a: T, b: T) => {
+    if (evaluatorFunction) {
+      return evaluatorFunction(a, b);
+    }
+    if (a[firstClassProperty] > b[firstClassProperty]) {
+      return order === "ASC" ? 1 : -1;
+    } else if (a[firstClassProperty] < b[firstClassProperty]) {
+      return order === "ASC" ? -1 : 1;
+    } else return 0;
+  });
+
+export const GetCasedString = (
+  actualString: string,
+  casing: "camelCase" | "PascalCase" = "camelCase",
+  separator: string = ""
+) =>
+  actualString
+    .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) =>
+      index === 0 && casing === "camelCase" ? word.toLowerCase() : word.toUpperCase()
+    )
+    .replace(/\s+/g, separator);
+
+export const replaceValues = (actualString: string, dataObject: IDynamicObject = {}) =>
+  actualString.replace(/{([^}]+)}/g, (word) => {
+    const bareWord = word.replace(/{/g, "").replace(/}/g, "");
+    return Boolean(dataObject[bareWord]) ? dataObject[bareWord] : word;
+  });

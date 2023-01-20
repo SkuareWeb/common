@@ -35,6 +35,8 @@ __exportStar(require("./HistoryBase"), exports);
 __exportStar(require("./LiveScreeningEvent"), exports);
 __exportStar(require("./LiveBandEvent"), exports);
 __exportStar(require("./LoungeEvent"), exports);
+__exportStar(require("./MultiMedia"), exports);
+__exportStar(require("./Notification"), exports);
 __exportStar(require("./Offer"), exports);
 __exportStar(require("./OneTimeEvent"), exports);
 __exportStar(require("./Order"), exports);

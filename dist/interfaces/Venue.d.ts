@@ -1,5 +1,6 @@
 import { IArea } from "./Area";
 import { VenueLocationType } from "../constants";
+import { IHistoryBase } from "./HistoryBase";
 export interface IVenue {
     id: string;
     name: string;
@@ -13,3 +14,4 @@ export interface IVenue {
     createdAt: string | Date;
     updatedAt: string | Date;
 }
+export type IVenueHistory = IHistoryBase<IVenue>;

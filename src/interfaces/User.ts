@@ -1,4 +1,5 @@
 import { UserType } from "../constants";
+import { IHistoryBase } from "./HistoryBase";
 
 export interface IUser {
   id: string;
@@ -14,3 +15,5 @@ export interface IUser {
   isActive: boolean;
   countryCode: string;
 }
+
+export type IUserHistory = IHistoryBase<IUser>;

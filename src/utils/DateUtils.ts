@@ -35,3 +35,6 @@ export const ShowDateRange = (
         )}`;
   }
 };
+
+export const serverSearchDataFormat = (dateString: string | Date): string =>
+  moment(dateString, SERVER_DATE_TIME_FORMAT).utc().format(SERVER_DATE_SEARCH_FORMAT);

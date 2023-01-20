@@ -19,7 +19,11 @@
   },
   "homepage": "https://github.com/SkuareWeb/common#readme",
   "devDependencies": {
+    "axios": "^1.2.3",
     "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "axios": "*"
   },
   "dependencies": {
     "moment": "^2.29.4"

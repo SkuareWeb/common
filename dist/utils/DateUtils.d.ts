@@ -4,3 +4,4 @@ export declare const DATE_DISPLAY_FORMAT = "Do MMM YYYY";
 export declare const SERVER_DATE_SEARCH_FORMAT = "YYYY-MM-DDTHH:mm:ss.SSS";
 export declare const ServerToDateTime: (serverTime: string | Date) => string;
 export declare const ShowDateRange: (startTime: string | Date, endTime?: string | Date, includeTime?: boolean) => string;
+export declare const serverSearchDataFormat: (dateString: string | Date) => string;
