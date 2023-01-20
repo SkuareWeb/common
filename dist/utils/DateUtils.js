@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ShowDateRange = exports.ServerToDateTime = exports.SERVER_DATE_SEARCH_FORMAT = exports.DATE_DISPLAY_FORMAT = exports.DATE_TIME_DISPLAY_FORMAT = exports.SERVER_DATE_TIME_FORMAT = void 0;
+exports.serverSearchDataFormat = exports.ShowDateRange = exports.ServerToDateTime = exports.SERVER_DATE_SEARCH_FORMAT = exports.DATE_DISPLAY_FORMAT = exports.DATE_TIME_DISPLAY_FORMAT = exports.SERVER_DATE_TIME_FORMAT = void 0;
 const moment_1 = __importDefault(require("moment"));
 exports.SERVER_DATE_TIME_FORMAT = "YYYY-MM-DDTHH:mm:ss.SSSZ";
 exports.DATE_TIME_DISPLAY_FORMAT = "Do MMM YYYY | hh:mm a";
@@ -31,4 +31,6 @@ const ShowDateRange = (startTime, endTime, includeTime = true) => {
     }
 };
 exports.ShowDateRange = ShowDateRange;
+const serverSearchDataFormat = (dateString) => (0, moment_1.default)(dateString, exports.SERVER_DATE_TIME_FORMAT).utc().format(exports.SERVER_DATE_SEARCH_FORMAT);
+exports.serverSearchDataFormat = serverSearchDataFormat;
 //# sourceMappingURL=DateUtils.js.map

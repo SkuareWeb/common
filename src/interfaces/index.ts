@@ -1,8 +1,3 @@
-import { IHistoryBase } from "./HistoryBase";
-import { IOrder } from "./Order";
-import { IUser } from "./User";
-import { IVenue } from "./Venue";
-
 export * from "./Analytic";
 export * from "./Admin";
 export * from "./AppUser";
@@ -24,6 +19,8 @@ export * from "./HistoryBase";
 export * from "./LiveScreeningEvent";
 export * from "./LiveBandEvent";
 export * from "./LoungeEvent";
+export * from "./MultiMedia";
+export * from "./Notification";
 export * from "./Offer";
 export * from "./OneTimeEvent";
 export * from "./Order";
@@ -38,7 +35,3 @@ export * from "./Ticket";
 export * from "./TicketItem";
 export * from "./User";
 export * from "./Venue";
-
-export type IOrderHistory = IHistoryBase<IOrder>;
-export type IUserHistory = IHistoryBase<IUser>;
-export type IVenueHistory = IHistoryBase<IVenue>;
