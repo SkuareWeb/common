@@ -1,0 +1,27 @@
+{
+  "name": "@skuare/common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aarshad-devani-skuare@github.com/SkuareWeb/common.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkuareWeb/common/issues"
+  },
+  "homepage": "https://github.com/SkuareWeb/common#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
