@@ -7,4 +7,5 @@ export interface ITicketItem {
   inTransaction: number;
   bufferQuantity: number;
   sold?: number;
+  allowOnlyPerTransaction?: boolean;
 }

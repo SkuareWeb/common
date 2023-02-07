@@ -6,7 +6,6 @@ export * from "./Artist";
 export * from "./BankAccount";
 export * from "./BrunchEvent";
 export * from "./City";
-export * from "./EntryType";
 export * from "./Establishment";
 export * from "./Event";
 export * from "./EventAggregation";
