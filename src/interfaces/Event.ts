@@ -38,6 +38,21 @@ export interface IEvent {
   isActive: boolean;
   createdAt: string | Date;
   updatedAt: string | Date;
+
+  // New Params
+  layouts?: string[];
+  slug: string; // city-establishmentName-eventName
+  popularity: 1 | 2 | 3 | 4 | 5;
+  subCategories: string[];
+  priority: 0 | 1 | 2 | 3 | 4;
+  viewCount: number;
+  bookedCount: number;
+  favouritesCount: number;
+  additionalOrganizer: Array<{
+    type: EventByType;
+    by: IEstablishment | IEventManager;
+    isMain: boolean;
+  }>;
 }
 
 export type IEventHistory = IHistoryBase<IEvent>;

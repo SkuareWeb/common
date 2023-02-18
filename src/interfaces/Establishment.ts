@@ -16,6 +16,10 @@ export interface IEstablishment {
   isActive: boolean;
   createdAt: string | Date;
   updatedAt: string | Date;
+  coords: {
+    lat: number;
+    lon: number;
+  };
 }
 
 export type IEstablishmentHistory = IHistoryBase<IEstablishment>;

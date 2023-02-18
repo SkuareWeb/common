@@ -14,6 +14,11 @@ export interface IVenue {
   isActive: boolean;
   createdAt: string | Date;
   updatedAt: string | Date;
+  // new Paramters
+  coords: {
+    lat: number;
+    lon: number;
+  };
 }
 
 export type IVenueHistory = IHistoryBase<IVenue>;
