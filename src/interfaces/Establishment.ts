@@ -5,6 +5,7 @@ import { ISocialLinks } from "./SocialLinks";
 export interface IEstablishment {
   id: string;
   establishmentName: string;
+
   address: string;
   area: string | IArea;
   gmapUrl?: string;
@@ -20,6 +21,12 @@ export interface IEstablishment {
     lat: number;
     lon: number;
   };
+
+  // New Params
+  description?: string;
+  lgbtq: boolean;
+  petFriendly: boolean;
+  hasRooftop: boolean;
 }
 
 export type IEstablishmentHistory = IHistoryBase<IEstablishment>;
