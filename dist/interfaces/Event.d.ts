@@ -8,6 +8,11 @@ import { IMultiMedia } from "./MultiMedia";
 import { IArtist } from "./Artist";
 import { IVenue } from "./Venue";
 import { IHistoryBase } from "./HistoryBase";
+import { ICuisine } from "./Cuisine";
+import { IGeolocation } from "./Geolocation";
+import { ICategory } from "./Category";
+import { ICity } from "./City";
+import { IOrganizer } from "./Organizer";
 export interface IEvent {
     id: string;
     title: string;
@@ -21,7 +26,7 @@ export interface IEvent {
     parking: boolean;
     valet: boolean;
     liquor: boolean;
-    cuisine?: string;
+    cuisines: ICuisine[];
     tnc?: string;
     multimedia: IMultiMedia[];
     eventByDisplay?: string;
@@ -32,10 +37,26 @@ export interface IEvent {
     typeDisplay: string;
     tickets: ITicketItem[];
     shareUrl?: string;
-    venue?: IVenue;
+    eventSpace?: IVenue;
     locationType?: VenueLocationType;
     isActive: boolean;
     createdAt: string | Date;
     updatedAt: string | Date;
+    venue: {
+        name: string;
+        address: string;
+    };
+    location: IGeolocation;
+    hostAtEstablishment: boolean;
+    layouts?: IMultiMedia[];
+    categories: ICategory[];
+    slug: string;
+    popularity: number;
+    priority: number;
+    viewCount: number;
+    bookedCount: number;
+    favouritesCount: number;
+    organizers: IOrganizer[];
+    city: string | ICity;
 }
 export type IEventHistory = IHistoryBase<IEvent>;

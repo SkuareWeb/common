@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SearchType = exports.HistoryAction = exports.BotUsers = exports.UserAction = exports.Environment = exports.VenueLocationType = exports.ObjectType = exports.MultiMediaType = exports.FilePath = exports.AzureBlobName = exports.RazorPayEvent = exports.ArtistType = exports.OrderStatus = exports.Pagination = exports.EventTypeDisplay = exports.EventType = exports.EventByType = exports.Action = exports.UserType = void 0;
+exports.EventSpaceType = exports.SearchType = exports.HistoryAction = exports.BotUsers = exports.UserAction = exports.Environment = exports.VenueLocationType = exports.ObjectType = exports.MultiMediaType = exports.FilePath = exports.AzureBlobName = exports.RazorPayEvent = exports.ArtistType = exports.OrderStatus = exports.Pagination = exports.EventTypeDisplay = exports.EventType = exports.EventByType = exports.Action = exports.UserType = void 0;
 var UserType;
 (function (UserType) {
     UserType["Anonymous"] = "Anonymous";
@@ -144,4 +144,10 @@ var SearchType;
     SearchType["Establishment"] = "Establishment";
     SearchType["Event"] = "Event";
 })(SearchType = exports.SearchType || (exports.SearchType = {}));
+var EventSpaceType;
+(function (EventSpaceType) {
+    EventSpaceType["INDOOR"] = "Indoor";
+    EventSpaceType["OUTDOOR"] = "Outdoor";
+    EventSpaceType["BOTH"] = "Indoor and Outdoor";
+})(EventSpaceType = exports.EventSpaceType || (exports.EventSpaceType = {}));
 //# sourceMappingURL=Enums.js.map

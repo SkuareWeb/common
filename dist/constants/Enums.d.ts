@@ -123,3 +123,8 @@ export declare enum SearchType {
     Establishment = "Establishment",
     Event = "Event"
 }
+export declare enum EventSpaceType {
+    INDOOR = "Indoor",
+    OUTDOOR = "Outdoor",
+    BOTH = "Indoor and Outdoor"
+}

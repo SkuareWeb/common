@@ -1,25 +1,19 @@
 import { IArea } from "./Area";
-import { ICuisine } from "./Cuisine";
+import { EventSpaceType } from "../constants";
 import { IGeolocation } from "./Geolocation";
 import { IHistoryBase } from "./HistoryBase";
-import { IMultiMedia } from "./MultiMedia";
-import { ISocialLinks } from "./SocialLinks";
-export interface IEstablishment {
+export interface IEventSpace {
     id: string;
     name: string;
     address: string;
     area: string | IArea;
     gmapUrl?: string;
-    socialLinks: ISocialLinks[];
+    locationType: EventSpaceType;
     parking: boolean;
     valet: boolean;
-    liquor: boolean;
-    cuisines: ICuisine[];
     isActive: boolean;
     createdAt: string | Date;
     updatedAt: string | Date;
     location: IGeolocation;
-    logo?: string;
-    multimedia: IMultiMedia[];
 }
-export type IEstablishmentHistory = IHistoryBase<IEstablishment>;
+export type IEventSpaceHistory = IHistoryBase<IEventSpace>;
