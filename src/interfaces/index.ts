@@ -7,6 +7,7 @@ export * from "./BankAccount";
 export * from "./BrunchEvent";
 export * from "./Category";
 export * from "./City";
+export * from "./ClaimedOffer";
 export * from "./Cuisine";
 export * from "./EntryType";
 export * from "./Establishment";

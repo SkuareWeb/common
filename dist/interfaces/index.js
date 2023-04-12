@@ -23,6 +23,7 @@ __exportStar(require("./BankAccount"), exports);
 __exportStar(require("./BrunchEvent"), exports);
 __exportStar(require("./Category"), exports);
 __exportStar(require("./City"), exports);
+__exportStar(require("./ClaimedOffer"), exports);
 __exportStar(require("./Cuisine"), exports);
 __exportStar(require("./EntryType"), exports);
 __exportStar(require("./Establishment"), exports);
