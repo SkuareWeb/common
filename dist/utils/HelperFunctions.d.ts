@@ -5,3 +5,8 @@ export declare const getTotal: (array: number[]) => number;
 export declare const SortObjects: <T extends unknown>(initialArray: T[], firstClassProperty: keyof T, order?: "ASC" | "DESC", evaluatorFunction?: ((a: T, b: T) => 0 | 1 | -1) | undefined) => T[];
 export declare const GetCasedString: (actualString: string, casing?: "camelCase" | "PascalCase", separator?: string) => string;
 export declare const replaceValues: (actualString: string, dataObject?: IDynamicObject) => string;
+export declare const BuildUrl: (path: string, urlParams?: {
+    [key: string]: string;
+}, queryParams?: {
+    [key: string]: string;
+}, basePath?: string) => string;

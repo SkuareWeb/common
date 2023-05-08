@@ -63,3 +63,17 @@ export const replaceValues = (actualString: string, dataObject: IDynamicObject =
     const bareWord = word.replace(/{/g, "").replace(/}/g, "");
     return Boolean(dataObject[bareWord]) ? dataObject[bareWord] : word;
   });
+
+export const BuildUrl = (
+  path: string,
+  urlParams: { [key: string]: string } = {},
+  queryParams: { [key: string]: string } = {},
+  basePath: string = ""
+) => {
+  let url = `${basePath}${path}`;
+  Object.entries(urlParams).forEach(([k, v]) => {
+    url = url.replace(`:${k}`, v);
+  });
+  url += ObjectToParams(queryParams);
+  return url;
+};

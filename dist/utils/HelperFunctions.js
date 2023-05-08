@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.replaceValues = exports.GetCasedString = exports.SortObjects = exports.getTotal = exports.ValidateEmail = exports.ObjectToParams = void 0;
+exports.BuildUrl = exports.replaceValues = exports.GetCasedString = exports.SortObjects = exports.getTotal = exports.ValidateEmail = exports.ObjectToParams = void 0;
 const EMAIL_REGEX = /\S+@\S+\.\S+/;
 const ObjectToParams = (paramsObject) => {
     const validEntries = Object.entries(paramsObject).filter((entry) => !!entry[1]);
@@ -46,4 +46,13 @@ const replaceValues = (actualString, dataObject = {}) => actualString.replace(/{
     return Boolean(dataObject[bareWord]) ? dataObject[bareWord] : word;
 });
 exports.replaceValues = replaceValues;
+const BuildUrl = (path, urlParams = {}, queryParams = {}, basePath = "") => {
+    let url = `${basePath}${path}`;
+    Object.entries(urlParams).forEach(([k, v]) => {
+        url = url.replace(`:${k}`, v);
+    });
+    url += (0, exports.ObjectToParams)(queryParams);
+    return url;
+};
+exports.BuildUrl = BuildUrl;
 //# sourceMappingURL=HelperFunctions.js.map
