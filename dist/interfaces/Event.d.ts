@@ -1,12 +1,12 @@
 import { IArea } from "./Area";
 import { IEstablishment } from "./Establishment";
 import { IEventManager } from "./EventManager";
+import { IEventSpace } from "./EventSpace";
 import { ISocialLinks } from "./SocialLinks";
 import { EventByType, EventType, VenueLocationType } from "../constants";
 import { ITicketItem } from "./TicketItem";
 import { IMultiMedia } from "./MultiMedia";
 import { IArtist } from "./Artist";
-import { IVenue } from "./Venue";
 import { IHistoryBase } from "./HistoryBase";
 import { ICuisine } from "./Cuisine";
 import { IGeolocation } from "./Geolocation";
@@ -37,7 +37,7 @@ export interface IEvent {
     typeDisplay: string;
     tickets: ITicketItem[];
     shareUrl?: string;
-    eventSpace?: IVenue;
+    eventSpace?: IEventSpace;
     locationType?: VenueLocationType;
     isActive: boolean;
     createdAt: string | Date;
