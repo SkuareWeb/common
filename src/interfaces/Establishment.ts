@@ -3,7 +3,7 @@ import { ICuisine } from "./Cuisine";
 import { IGeolocation } from "./Geolocation";
 import { IHistoryBase } from "./HistoryBase";
 import { IMultiMedia } from "./MultiMedia";
-import { ISocialLinks } from "./SocialLinks";
+import { ISocialLink } from "./SocialLink";
 
 export interface IEstablishment {
   id: string;
@@ -11,7 +11,7 @@ export interface IEstablishment {
   address: string;
   area: string | IArea;
   gmapUrl?: string;
-  socialLinks: ISocialLinks[];
+  socialLinks: ISocialLink[];
   parking: boolean;
   valet: boolean;
   liquor: boolean;

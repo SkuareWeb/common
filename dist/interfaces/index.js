@@ -53,7 +53,7 @@ __exportStar(require("./PaginatedResponse"), exports);
 __exportStar(require("./Permission"), exports);
 __exportStar(require("./Rule"), exports);
 __exportStar(require("./SearchResult"), exports);
-__exportStar(require("./SocialLinks"), exports);
+__exportStar(require("./SocialLink"), exports);
 __exportStar(require("./SportsEvent"), exports);
 __exportStar(require("./StandUpEvent"), exports);
 __exportStar(require("./Ticket"), exports);

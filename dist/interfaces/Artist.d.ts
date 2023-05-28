@@ -1,9 +1,9 @@
 import { IUser } from "./User";
-import { ISocialLinks } from "./SocialLinks";
+import { ISocialLink } from "./SocialLink";
 import { ArtistType, UserType } from "../constants";
 export interface IArtist extends IUser {
     stageName?: string;
-    socialLinks: ISocialLinks[];
+    socialLinks: ISocialLink[];
     type: UserType.Artist;
     description?: string;
     artistType: ArtistType;

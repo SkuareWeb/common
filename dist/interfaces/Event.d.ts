@@ -2,7 +2,7 @@ import { IArea } from "./Area";
 import { IEstablishment } from "./Establishment";
 import { IEventManager } from "./EventManager";
 import { IEventSpace } from "./EventSpace";
-import { ISocialLinks } from "./SocialLinks";
+import { ISocialLink } from "./SocialLink";
 import { EventByType, EventType, VenueLocationType } from "../constants";
 import { ITicketItem } from "./TicketItem";
 import { IMultiMedia } from "./MultiMedia";
@@ -20,7 +20,7 @@ export interface IEvent {
     address: string;
     gmapUrl: string;
     area: string | IArea;
-    socialLinks: ISocialLinks[];
+    socialLinks: ISocialLink[];
     startDateTime: string | Date;
     endDateTime: string | Date;
     parking: boolean;

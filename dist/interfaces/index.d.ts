@@ -37,7 +37,7 @@ export * from "./PaginatedResponse";
 export * from "./Permission";
 export * from "./Rule";
 export * from "./SearchResult";
-export * from "./SocialLinks";
+export * from "./SocialLink";
 export * from "./SportsEvent";
 export * from "./StandUpEvent";
 export * from "./Ticket";
