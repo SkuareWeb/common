@@ -49,7 +49,7 @@ exports.replaceValues = replaceValues;
 const BuildUrl = (path, urlParams = {}, queryParams = {}, basePath = "") => {
     let url = `${basePath}${path}`;
     Object.entries(urlParams).forEach(([k, v]) => {
-        url = url.replace(`:${k}`, v);
+        url = url.replace(`:${k}`, v.toString());
     });
     url += (0, exports.ObjectToParams)(queryParams);
     return url;

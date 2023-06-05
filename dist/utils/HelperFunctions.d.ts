@@ -6,7 +6,7 @@ export declare const SortObjects: <T extends unknown>(initialArray: T[], firstCl
 export declare const GetCasedString: (actualString: string, casing?: "camelCase" | "PascalCase", separator?: string) => string;
 export declare const replaceValues: (actualString: string, dataObject?: IDynamicObject) => string;
 export declare const BuildUrl: (path: string, urlParams?: {
-    [key: string]: string;
+    [key: string]: string | number;
 }, queryParams?: {
-    [key: string]: string;
+    [key: string]: string | number;
 }, basePath?: string) => string;

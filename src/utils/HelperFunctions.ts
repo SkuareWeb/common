@@ -66,13 +66,13 @@ export const replaceValues = (actualString: string, dataObject: IDynamicObject =
 
 export const BuildUrl = (
   path: string,
-  urlParams: { [key: string]: string } = {},
-  queryParams: { [key: string]: string } = {},
+  urlParams: { [key: string]: string | number } = {},
+  queryParams: { [key: string]: string | number } = {},
   basePath: string = ""
 ) => {
   let url = `${basePath}${path}`;
   Object.entries(urlParams).forEach(([k, v]) => {
-    url = url.replace(`:${k}`, v);
+    url = url.replace(`:${k}`, v.toString());
   });
   url += ObjectToParams(queryParams);
   return url;
