@@ -25,6 +25,13 @@ export interface IUserProfile {
     pushNotifications: boolean;
     emailNotifications: boolean;
     smsNotifications: boolean;
+    getWhatsappUpdates: boolean;
+    getEmailUpdates: boolean;
+    getRecommendations: boolean;
+    getSpecialOffers: boolean;
+    getTicketsWhatsapp: boolean;
+    getTicketsMessage: boolean;
+    getEventReminder: boolean;
     fcmTokens: string[];
 }
 export declare enum FireStoreCollectionNames {
