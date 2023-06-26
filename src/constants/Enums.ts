@@ -24,6 +24,7 @@ export enum EventByType {
 export enum EventType {
   BrunchEvent = "BrunchEvent",
   ExhibitionEvent = "ExhibitionEvent",
+  HoliEvent = "HoliEvent",
   LiveBandEvent = "LiveBandEvent",
   LiveScreeningEvent = "LiveScreeningEvent",
   LoungeEvent = "LoungeEvent",
@@ -35,6 +36,7 @@ export enum EventType {
 export const EventTypeDisplay = {
   [EventType.BrunchEvent]: "Brunch",
   [EventType.ExhibitionEvent]: "Exhibition",
+  [EventType.HoliEvent]: "Holi",
   [EventType.LiveBandEvent]: "Live Band",
   [EventType.LiveScreeningEvent]: "Live Screening",
   [EventType.LoungeEvent]: "Lounge",
