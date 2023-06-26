@@ -85,6 +85,8 @@ export enum FilePath {
   EventImage = "event",
   EventDisplay = "event_display",
   Logo = "logo",
+  Offer = "offer",
+  QRCode = "qrcode",
 }
 
 export enum MultiMediaType {
@@ -102,9 +104,10 @@ export enum ObjectType {
   EventManager = "EventManager",
   City = "City",
   GateKeeper = "GateKeeper",
+  Offer = "Offer",
   Other = "Other",
   Order = "Order",
-  Venue = "Venue",
+  EventSpace = "EventSpace",
 }
 
 export enum VenueLocationType {
