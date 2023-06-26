@@ -126,8 +126,8 @@ var Environment;
 var UserAction;
 (function (UserAction) {
     UserAction["View"] = "View";
-    UserAction["Favourite"] = "Favourite";
-    UserAction["UnFavourite"] = "UnFavourite";
+    UserAction["Follow"] = "Follow";
+    UserAction["Unfollow"] = "Unfollow";
     UserAction["Subscribe"] = "Subscribe";
     UserAction["Bookmark"] = "Bookmark";
     UserAction["Buy"] = "Buy";

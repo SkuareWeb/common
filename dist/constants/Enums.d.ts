@@ -108,8 +108,8 @@ export declare enum Environment {
 }
 export declare enum UserAction {
     View = "View",
-    Favourite = "Favourite",
-    UnFavourite = "UnFavourite",
+    Follow = "Follow",
+    Unfollow = "Unfollow",
     Subscribe = "Subscribe",
     Bookmark = "Bookmark",
     Buy = "Buy"
