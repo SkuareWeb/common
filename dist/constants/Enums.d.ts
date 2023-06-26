@@ -21,6 +21,7 @@ export declare enum EventByType {
 export declare enum EventType {
     BrunchEvent = "BrunchEvent",
     ExhibitionEvent = "ExhibitionEvent",
+    HoliEvent = "HoliEvent",
     LiveBandEvent = "LiveBandEvent",
     LiveScreeningEvent = "LiveScreeningEvent",
     LoungeEvent = "LoungeEvent",
@@ -31,6 +32,7 @@ export declare enum EventType {
 export declare const EventTypeDisplay: {
     BrunchEvent: string;
     ExhibitionEvent: string;
+    HoliEvent: string;
     LiveBandEvent: string;
     LiveScreeningEvent: string;
     LoungeEvent: string;
@@ -72,7 +74,9 @@ export declare enum FilePath {
     ArtistImage = "artist",
     EventImage = "event",
     EventDisplay = "event_display",
-    Logo = "logo"
+    Logo = "logo",
+    Offer = "offer",
+    QRCode = "qrcode"
 }
 export declare enum MultiMediaType {
     Image = "image",
@@ -88,9 +92,10 @@ export declare enum ObjectType {
     EventManager = "EventManager",
     City = "City",
     GateKeeper = "GateKeeper",
+    Offer = "Offer",
     Other = "Other",
     Order = "Order",
-    Venue = "Venue"
+    EventSpace = "EventSpace"
 }
 export declare enum VenueLocationType {
     INDOOR = "Indoor",

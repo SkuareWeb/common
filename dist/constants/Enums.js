@@ -28,6 +28,7 @@ var EventType;
 (function (EventType) {
     EventType["BrunchEvent"] = "BrunchEvent";
     EventType["ExhibitionEvent"] = "ExhibitionEvent";
+    EventType["HoliEvent"] = "HoliEvent";
     EventType["LiveBandEvent"] = "LiveBandEvent";
     EventType["LiveScreeningEvent"] = "LiveScreeningEvent";
     EventType["LoungeEvent"] = "LoungeEvent";
@@ -38,6 +39,7 @@ var EventType;
 exports.EventTypeDisplay = {
     [EventType.BrunchEvent]: "Brunch",
     [EventType.ExhibitionEvent]: "Exhibition",
+    [EventType.HoliEvent]: "Holi",
     [EventType.LiveBandEvent]: "Live Band",
     [EventType.LiveScreeningEvent]: "Live Screening",
     [EventType.LoungeEvent]: "Lounge",
@@ -86,6 +88,8 @@ var FilePath;
     FilePath["EventImage"] = "event";
     FilePath["EventDisplay"] = "event_display";
     FilePath["Logo"] = "logo";
+    FilePath["Offer"] = "offer";
+    FilePath["QRCode"] = "qrcode";
 })(FilePath = exports.FilePath || (exports.FilePath = {}));
 var MultiMediaType;
 (function (MultiMediaType) {
@@ -103,9 +107,10 @@ var ObjectType;
     ObjectType["EventManager"] = "EventManager";
     ObjectType["City"] = "City";
     ObjectType["GateKeeper"] = "GateKeeper";
+    ObjectType["Offer"] = "Offer";
     ObjectType["Other"] = "Other";
     ObjectType["Order"] = "Order";
-    ObjectType["Venue"] = "Venue";
+    ObjectType["EventSpace"] = "EventSpace";
 })(ObjectType = exports.ObjectType || (exports.ObjectType = {}));
 var VenueLocationType;
 (function (VenueLocationType) {
