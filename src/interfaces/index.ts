@@ -32,6 +32,7 @@ export * from "./Offer";
 export * from "./OneTimeEvent";
 export * from "./Order";
 export * from "./OrderItem";
+export * from "./Organizer";
 export * from "./Other";
 export * from "./PaginatedResponse";
 export * from "./Permission";

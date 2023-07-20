@@ -48,6 +48,7 @@ __exportStar(require("./Offer"), exports);
 __exportStar(require("./OneTimeEvent"), exports);
 __exportStar(require("./Order"), exports);
 __exportStar(require("./OrderItem"), exports);
+__exportStar(require("./Organizer"), exports);
 __exportStar(require("./Other"), exports);
 __exportStar(require("./PaginatedResponse"), exports);
 __exportStar(require("./Permission"), exports);
