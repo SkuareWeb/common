@@ -26,6 +26,7 @@ export * from "./HoliEvent";
 export * from "./LiveScreeningEvent";
 export * from "./LiveBandEvent";
 export * from "./LoungeEvent";
+export * from "./Message";
 export * from "./MultiMedia";
 export * from "./Notification";
 export * from "./Offer";
