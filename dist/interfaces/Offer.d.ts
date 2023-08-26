@@ -3,6 +3,7 @@ import { IEvent } from "./Event";
 import { EventByType } from "../constants";
 import { IEventManager } from "./EventManager";
 import { IHistoryBase } from "./HistoryBase";
+import { ICity } from "./City";
 export interface IOffer {
     id: string;
     title: string;
@@ -21,5 +22,6 @@ export interface IOffer {
     isActive: boolean;
     createdAt: string | Date;
     updatedAt: string | Date;
+    city: string | ICity;
 }
 export type IOfferHistory = IHistoryBase<IOffer>;
