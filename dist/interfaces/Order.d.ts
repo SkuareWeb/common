@@ -16,5 +16,6 @@ export interface IOrder {
     purchasedOn: string | Date;
     createdAt: string | Date;
     updatedAt: string | Date;
+    source: string;
 }
 export type IOrderHistory = IHistoryBase<IOrder>;
