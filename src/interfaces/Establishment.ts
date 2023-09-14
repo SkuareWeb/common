@@ -15,7 +15,7 @@ export interface IEstablishment {
   parking: boolean;
   valet: boolean;
   liquor: boolean;
-  cuisines: ICuisine[];
+  cuisines: string[] | ICuisine[];
   isActive: boolean;
   createdAt: string | Date;
   updatedAt: string | Date;
