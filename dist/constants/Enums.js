@@ -27,22 +27,30 @@ var EventByType;
 var EventType;
 (function (EventType) {
     EventType["BrunchEvent"] = "BrunchEvent";
+    EventType["ChristmasEvent"] = "ChristmasEvent";
     EventType["ExhibitionEvent"] = "ExhibitionEvent";
+    EventType["HalloweenEvent"] = "HalloweenEvent";
     EventType["HoliEvent"] = "HoliEvent";
     EventType["LiveBandEvent"] = "LiveBandEvent";
     EventType["LiveScreeningEvent"] = "LiveScreeningEvent";
     EventType["LoungeEvent"] = "LoungeEvent";
+    EventType["NavratriEvent"] = "NavratriEvent";
+    EventType["NewYearEvent"] = "NewYearEvent";
     EventType["OneTimeEvent"] = "OneTimeEvent";
     EventType["SportsEvent"] = "SportsEvent";
     EventType["StandUpEvent"] = "StandUpEvent";
 })(EventType = exports.EventType || (exports.EventType = {}));
 exports.EventTypeDisplay = {
     [EventType.BrunchEvent]: "Brunch",
+    [EventType.ChristmasEvent]: "Christmas",
     [EventType.ExhibitionEvent]: "Exhibition",
+    [EventType.HalloweenEvent]: "Halloween",
     [EventType.HoliEvent]: "Holi",
     [EventType.LiveBandEvent]: "Live Band",
     [EventType.LiveScreeningEvent]: "Live Screening",
     [EventType.LoungeEvent]: "Lounge",
+    [EventType.NavratriEvent]: "Navratri",
+    [EventType.NewYearEvent]: "New Year",
     [EventType.OneTimeEvent]: "One Time",
     [EventType.SportsEvent]: "Sports",
     [EventType.StandUpEvent]: "Stand Up",
