@@ -20,22 +20,30 @@ export declare enum EventByType {
 }
 export declare enum EventType {
     BrunchEvent = "BrunchEvent",
+    ChristmasEvent = "ChristmasEvent",
     ExhibitionEvent = "ExhibitionEvent",
+    HalloweenEvent = "HalloweenEvent",
     HoliEvent = "HoliEvent",
     LiveBandEvent = "LiveBandEvent",
     LiveScreeningEvent = "LiveScreeningEvent",
     LoungeEvent = "LoungeEvent",
+    NavratriEvent = "NavratriEvent",
+    NewYearEvent = "NewYearEvent",
     OneTimeEvent = "OneTimeEvent",
     SportsEvent = "SportsEvent",
     StandUpEvent = "StandUpEvent"
 }
 export declare const EventTypeDisplay: {
     BrunchEvent: string;
+    ChristmasEvent: string;
     ExhibitionEvent: string;
+    HalloweenEvent: string;
     HoliEvent: string;
     LiveBandEvent: string;
     LiveScreeningEvent: string;
     LoungeEvent: string;
+    NavratriEvent: string;
+    NewYearEvent: string;
     OneTimeEvent: string;
     SportsEvent: string;
     StandUpEvent: string;

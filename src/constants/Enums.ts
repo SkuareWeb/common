@@ -23,11 +23,15 @@ export enum EventByType {
 
 export enum EventType {
   BrunchEvent = "BrunchEvent",
+  ChristmasEvent = "ChristmasEvent",
   ExhibitionEvent = "ExhibitionEvent",
+  HalloweenEvent = "HalloweenEvent",
   HoliEvent = "HoliEvent",
   LiveBandEvent = "LiveBandEvent",
   LiveScreeningEvent = "LiveScreeningEvent",
   LoungeEvent = "LoungeEvent",
+  NavratriEvent = "NavratriEvent",
+  NewYearEvent = "NewYearEvent",
   OneTimeEvent = "OneTimeEvent",
   SportsEvent = "SportsEvent",
   StandUpEvent = "StandUpEvent",
@@ -35,11 +39,15 @@ export enum EventType {
 
 export const EventTypeDisplay = {
   [EventType.BrunchEvent]: "Brunch",
+  [EventType.ChristmasEvent]: "Christmas",
   [EventType.ExhibitionEvent]: "Exhibition",
+  [EventType.HalloweenEvent]: "Halloween",
   [EventType.HoliEvent]: "Holi",
   [EventType.LiveBandEvent]: "Live Band",
   [EventType.LiveScreeningEvent]: "Live Screening",
   [EventType.LoungeEvent]: "Lounge",
+  [EventType.NavratriEvent]: "Navratri",
+  [EventType.NewYearEvent]: "New Year",
   [EventType.OneTimeEvent]: "One Time",
   [EventType.SportsEvent]: "Sports",
   [EventType.StandUpEvent]: "Stand Up",
