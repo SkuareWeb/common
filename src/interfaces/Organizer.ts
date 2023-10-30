@@ -4,5 +4,5 @@ import { IEventManager } from "./EventManager";
 
 export interface IOrganizer {
   type: EventByType;
-  by: IEstablishment | IEventManager;
+  by: IEstablishment | IEventManager | string;
 }
